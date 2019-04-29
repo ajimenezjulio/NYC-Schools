@@ -1,7 +1,7 @@
 # NYC High Schools
 
 <p align="center">
-![](NYCHighschools.gif)
+<img ![](NYCHighschools.gif)>
 </p>
 
 ### Description
