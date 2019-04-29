@@ -1,9 +1,5 @@
 # NYC High Schools
 
-<div align="center">
-  <img src="NYCHighschools.gif">
-</div>
-
 ### Description
 This application shows all the highschools that are in NYC along with their SAT scores.
 
@@ -16,3 +12,7 @@ This application shows all the highschools that are in NYC along with their SAT 
 - Unit tests
 - Cool animations
 - Protection against broken web services
+
+<div align="center">
+  <img src="NYCHighschools.gif">
+</div>
