@@ -3,6 +3,10 @@
 ### Description
 This application shows all the highschools that are in NYC along with their SAT scores.
 
+<div align="center">
+  <img src="NYCHighschools.gif">
+</div>
+
 ### Features
 - MVVM architecture
 - Lean ViewControllers
@@ -12,7 +16,3 @@ This application shows all the highschools that are in NYC along with their SAT 
 - Unit tests
 - Cool animations
 - Protection against broken web services
-
-<div align="center">
-  <img src="NYCHighschools.gif">
-</div>
