@@ -1,8 +1,8 @@
 # NYC High Schools
 
-<p align="center">
-<img ![](NYCHighschools.gif)>
-</p>
+<div align="center">
+  ![](NYCHighschools.gif)
+</div>
 
 ### Description
 This application shows all the highschools that are in NYC along with their SAT scores.
