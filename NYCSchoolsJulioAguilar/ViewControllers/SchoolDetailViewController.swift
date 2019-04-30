@@ -12,13 +12,13 @@ class SchoolDetailViewController: UIViewController, ActivityIndicatorProtocol {
     
     // IBOutlets
     @IBOutlet weak var logo: UIImageView!
-    @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var cityState: UILabel!
-    @IBOutlet weak var takers: UILabel!
-    @IBOutlet weak var math: UILabel!
-    @IBOutlet weak var writing: UILabel!
-    @IBOutlet weak var reading: UILabel!
-    @IBOutlet weak var overview: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var cityStateLabel: UILabel!
+    @IBOutlet weak var takersLabel: UILabel!
+    @IBOutlet weak var mathLabel: UILabel!
+    @IBOutlet weak var writingLabel: UILabel!
+    @IBOutlet weak var readingLabel: UILabel!
+    @IBOutlet weak var overviewLabel: UILabel!
     @IBOutlet weak var scoresLeftView: UIView!
     @IBOutlet weak var scoresRightView: UIView!
     
@@ -40,8 +40,8 @@ class SchoolDetailViewController: UIViewController, ActivityIndicatorProtocol {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        animateViewsTopToBottom(views: [logo, name, cityState])
-        animateViewsBottomToTop(views: [overview])
+        animateViewsTopToBottom(views: [logo, nameLabel, cityStateLabel])
+        animateViewsBottomToTop(views: [overviewLabel])
         animateViewsLeftToRight(views: [scoresLeftView])
         animateViewsRightToLeft(views: [scoresRightView])
     }
@@ -75,15 +75,15 @@ class SchoolDetailViewController: UIViewController, ActivityIndicatorProtocol {
             self.logo.image = image.circleMasked
         }
         // Before we check for schoolName so it's safe to unwrap
-        self.name.text = scoresVM.schoolViewModel?.name
-        self.cityState.text = (scoresVM.schoolViewModel?.city)! + ", " + (scoresVM.schoolViewModel?.state)!
-        self.overview.text = scoresVM.schoolViewModel?.overview
+        self.nameLabel.text = scoresVM.schoolViewModel?.name
+        self.cityStateLabel.text = (scoresVM.schoolViewModel?.city)! + ", " + (scoresVM.schoolViewModel?.state)!
+        self.overviewLabel.text = scoresVM.schoolViewModel?.overview
         
         // Fill the data
-        self.takers.text = scoresVM.takers
-        self.reading.text = scoresVM.reading
-        self.math.text = scoresVM.math
-        self.writing.text = scoresVM.writing
+        self.takersLabel.text = scoresVM.takers
+        self.readingLabel.text = scoresVM.reading
+        self.mathLabel.text = scoresVM.math
+        self.writingLabel.text = scoresVM.writing
     }
     
     
